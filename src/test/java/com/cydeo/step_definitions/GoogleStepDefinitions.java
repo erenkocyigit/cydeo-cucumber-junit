@@ -14,10 +14,10 @@ public class GoogleStepDefinitions {
 
     GoogleSearchPage googleSearchPage = new GoogleSearchPage();
 
-    @When("user types {word} and clicks enter")
-    public void user_types_and_clicks_enter2(String searchKeyword) {
+    @When("user types apple and clicks enter")
+    public void user_types_and_clicks_enter2() {
         googleSearchPage.applyCookies.click();
-        googleSearchPage.searchBox.sendKeys(searchKeyword+ Keys.ENTER);
+        googleSearchPage.searchBox.sendKeys("apple" + Keys.ENTER);
 
     }
 
