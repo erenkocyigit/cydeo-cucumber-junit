@@ -36,14 +36,12 @@ public class CydeoWebTable_StepDefinitions {
     }
     @Then("user should see url contains orders")
     public void user_should_see_url_contains_orders() {
-        BrowserUtils.verifyUrlContains("orders");
+        BrowserUtils.verifyUrlContains("https://web-table-2.cydeo.com/orders");
 
     }
 
     @When("user enters username {string} password {string} and logins")
     public void userEntersUsernamePasswordAndLogins(String username, String password) {
-        webTableLoginPage.inputUsername.sendKeys(username);
-        webTableLoginPage.inputPassword.sendKeys(password);
-        webTableLoginPage.inputLoginButton.click();
+        webTableLoginPage.login(username,password);
     }
 }
