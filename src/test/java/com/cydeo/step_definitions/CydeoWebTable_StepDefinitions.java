@@ -8,6 +8,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+import java.util.Map;
+
 public class CydeoWebTable_StepDefinitions {
 
     WebTableLoginPage webTableLoginPage = new WebTableLoginPage();
@@ -43,5 +45,15 @@ public class CydeoWebTable_StepDefinitions {
     @When("user enters username {string} password {string} and logins")
     public void userEntersUsernamePasswordAndLogins(String username, String password) {
         webTableLoginPage.login(username,password);
+    }
+    @When("user enters below credentials")
+    public void user_enters_below_credentials(Map<String,String > credentials) {
+
+//        webTableLoginPage.inputUsername.sendKeys(credentials.get("username"));
+//        webTableLoginPage.inputPassword.sendKeys(credentials.get("password"));
+//        webTableLoginPage.inputLoginButton.click();
+
+        webTableLoginPage.login(credentials.get("username"),credentials.get("password"));
+
     }
 }
