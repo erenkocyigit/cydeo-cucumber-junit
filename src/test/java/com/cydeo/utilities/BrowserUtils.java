@@ -103,6 +103,11 @@ public class BrowserUtils {
         return actualOptionsAsString ;
     }
 
+    /**
+     * This method will accept a group radio buttons as a List of WebElement.It will loop through the List, and click to the radio button that we provided
+     * @param radioButtons
+     * @param attributeValue
+     */
     public static void clickRadioButtonWithString(List<WebElement> radioButtons, String attributeValue ){
 
 
