@@ -31,14 +31,14 @@ Feature: Web table user order feature
     And user enters expiry date "<expDate>"
     And user enters process order button
     Then user should see "<expectedName>" in first row of the web table
-    @femaleScientist
+    @femaleScientists
     Examples: Famous female scientists
       | productType | quantity | customerName       | street    | city   | state   | zipcode | cardType | cardNumber       | expDate | expectedName       |
-      | MoneyCog    | 2        | Marie Curi      | London st | London | England | 50505   | Visa     | 1111222233334444 | 12/24   | Marie Curie        |
-      | Familybea   | 3        | Rosalind Frankli  | London st | London | England | 50505   | Visa     | 1111222233334444 | 12/24   | Rosalind Franklin  |
-      | Screenable  | 4        | List Meitne       | London st | London | England | 50505   | Visa     | 1111222233334444 | 12/24   | List Meitner       |
-      | MoneyCog    | 5        | Chien-Shiung W    | London st | London | England | 50505   | Visa     | 1111222233334444 | 12/24   | Chien-Shiung Wu    |
-      | MoneyCog    | 6        | Barbara McClintoc | London st | London | England | 50505   | Visa     | 1111222233334444 | 12/24   | Barbara McClintock |
+      | MoneyCog    | 2        | Marie Curie        | London st | London | England | 50505   | Visa     | 1111222233334444 | 12/24   | Marie Curie        |
+      | Familybea   | 3        | Rosalind Franklin  | London st | London | England | 50505   | Visa     | 1111222233334444 | 12/24   | Rosalind Franklin  |
+      | Screenable  | 4        | List Meitner       | London st | London | England | 50505   | Visa     | 1111222233334444 | 12/24   | List Meitner       |
+      | MoneyCog    | 5        | Chien-Shiung Wu    | London st | London | England | 50505   | Visa     | 1111222233334444 | 12/24   | Chien-Shiung Wu    |
+      | MoneyCog    | 6        | Barbara McClintock | London st | London | England | 50505   | Visa     | 1111222233334444 | 12/24   | Barbara McClintock |
 
     @maleScientist
     Examples: Famous male scientists
